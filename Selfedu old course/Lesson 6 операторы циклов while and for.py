@@ -70,11 +70,15 @@
     #print()
 #Одинацатый пример
 
-S=0; M=10; N=5
-for i in range(1,N+1):
-    for j in range(1,M+1):
-        S += i*j
-print(S)
+#S=0; M=10; N=5
+#for i in range(1,N+1):
+    #for j in range(1,M+1):
+        #S += i*j
+#print(S)
 
+
+for x in range(1,27,1):
+    if x % 2 == 1: continue
+    print(x)
     
 
