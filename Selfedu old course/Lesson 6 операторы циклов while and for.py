@@ -79,6 +79,7 @@
 
 for x in range(1,27,1):
     if x % 2 == 1: continue
-    print(x)
+    print(x**2)
+    
     
 
