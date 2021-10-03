@@ -70,16 +70,45 @@
     #print()
 #Одинацатый пример
 
-#S=0; M=10; N=5
-#for i in range(1,N+1):
-    #for j in range(1,M+1):
-        #S += i*j
-#print(S)
+S=0; M=10; N=5
+for i in range(1,N+1):
+    for j in range(1,M+1):
+        S += i*j
+print(S)
 
+#Вывод четных чисел
+#for x in range(1,27,1):
+    #if x % 2 == 1: continue
+    #print(x**2)
 
-for x in range(1,27,1):
-    if x % 2 == 1: continue
-    print(x**2)
+#Вывод не четных чисел
+
+#for x in range(1,27,1):
+    #if x % 2 == 0: continue
+    #print(x**2)    
+    
+#Четырнадцатый пример
+
+#s=0
+#for i in range(1, 1001, 1): s += 1/i
+#print(s)
+
+# Пятнадцатый пример, реализация линейной функции
+
+#k = 0.5; b = 2
+#lst = [0, 0.1, 0.2, 0.3, 0.4, 0.5]
+#for x in lst:
+    #print(x*k+b)
+
+#Шеснадцатый пример
+
+#msg = "Hello World"
+#for x in msg:
+    #print(x)
     
     
+   
+    
+
+
 
