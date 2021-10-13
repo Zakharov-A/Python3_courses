@@ -11,7 +11,7 @@
 # задача №1
 #print('abrakadabra'.count('a'))
 
-<<<<<<< HEAD
+
 # задача №2
 #print('abrakadabra'.replace('ab', ''))
 
