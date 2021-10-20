@@ -44,6 +44,19 @@
 
 # Задание №3
 
-print("0; -100; 5.6; -3".replace(';', '\n'))
+#print("0; -100; 5.6; -3".replace(';', '\n'))
+
+#[print(x.rjust(4)) for x in "0; -100; 5.6; -3".replace(';', '').split()]
+
+# Задание №4
+
+s = "abrakadabra"
+x = 0
+while x >= 0:
+    print(s.find("ra", x))
+    x = s.find("ra", s.find("ra", x) + 1)
+    
+
+
 
 
