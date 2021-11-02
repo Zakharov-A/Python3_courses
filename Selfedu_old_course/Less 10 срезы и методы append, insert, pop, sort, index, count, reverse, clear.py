@@ -24,18 +24,31 @@
 #Задания
 
 #Задание №1
-lst = []
-while True:
-    n = int(input("Введите число: "))
-    if n!=0:
-        lst.append(n**2)
-    else:break
-    print(lst)
+#lst = []
+#while True:
+    #n = int(input("Введите число: "))
+    #if n!=0:
+        #lst.append(n**2)
+    #else:break
+    #print(lst)
     
 #Задание №2
 
-    
+#print([x for x in['+7912123456', '915213456', '+6915213456', '+4915213456', '+7915213456'] if '+7' not in x])
+
 #Задание №3
-#Задание №4    
+#x = [1,2,3,4,5,6]
+#lst_x = [x[i] for i in range(1, len(x))]
+#lst_x.append(x[0])
+#print(lst_x)
+
+#Задание №4
+x = [1,2,3,4,5,6]
+lst_x = []
+for i in x:
+    lst_x.append(i-1)
+lst_x[0] = x[-1]
+print(lst_x)
+
     
     
