@@ -29,6 +29,13 @@
 
 #print(A)
 
+#A = []
+#N=10
+
+#A = [0.5*x+1 for x in range(N) ]
+
+#print(A)
+
 #cities = ["Москва", "Тверь", "Рязань", "Ярославль", "Владимир"]
 #A = [city for city in cities if len(city) < 7]
 #print(A)

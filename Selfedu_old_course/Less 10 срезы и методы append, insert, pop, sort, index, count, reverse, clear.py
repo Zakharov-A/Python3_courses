@@ -37,10 +37,10 @@
 #print([x for x in['+7912123456', '915213456', '+6915213456', '+4915213456', '+7915213456'] if '+7' not in x])
 
 #Задание №3
-#x = [1,2,3,4,5,6]
-#lst_x = [x[i] for i in range(1, len(x))]
-#lst_x.append(x[0])
-#print(lst_x)
+x = [1,2,3,4,5,6]
+lst_x = [x[i] for i in range(1, len(x))]
+lst_x.append(x[0])
+print(lst_x)
 
 #Задание №4
 x = [1,2,3,4,5,6]
