@@ -1,0 +1,36 @@
+Как найти SHA коммита
+
+Один из способов найти SHA коммита — просмотреть лог Git. Делается это при помощи команды git log:
+(my-feature)$ git log
+commit 94ab1fe28727b7f8b683a0084e00a9ec808d6d39 (HEAD -> my-feature, master)
+Author: John Mosesman <johnmosesman@gmail.com>
+Date:   Mon Apr 12 10:31:11 2021 -0500
+    This is the second commmit message.
+commit 035a128d2e66eb9fe3032036b3415e60c728f692 (blah)
+Author: John Mosesman <johnmosesman@gmail.com>
+Date:   Mon Apr 12 10:31:05 2021 -0500
+    This is the first commmit message.
+
+В первой строке каждого коммита после слова commit есть длинная строка букв и цифр: 94ab1fe28727…
+
+Вот она и называется SHA. Это уникальный идентификатор, генерируемый для каждого коммита.
+
+Чтобы перейти к определенному коммиту, вам нужно лишь передать его SHA в качестве параметра команды git checkout:
+(my-feature)$ git checkout 035a128d2e66eb9fe3032036b3415e60c728f692
+Note: switching to '035a128d2e66eb9fe3032036b3415e60c728f692'.
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+  git switch -c <new-branch-name>
+Or undo this operation with:
+  git switch -
+Turn off this advice by setting config variable advice.detachedHead to false
+HEAD is now at 035a128 a
+((HEAD detached at 035a128))$
+
+Примечание: обычно можно использовать всего несколько первых символов SHA, потому что первые 4-5 символов скорее всего образуют уникальную комбинацию в рамках проекта.
+Что такое detached HEAD (отсоединенный указатель HEAD)?
+
+В результате перехода к конкретному коммиту вы указываетесь в «состоянии отсоединенного указателя HEAD» («detached HEAD state»).
