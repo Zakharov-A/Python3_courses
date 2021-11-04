@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-qwerty
-=======
-Test 
->>>>>>> 0c99f11efa89123ee3de96e66276fe3be4cd4292
