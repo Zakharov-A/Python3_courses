@@ -1,6 +1,7 @@
 #def sayHello():
-    #print("hello")
-#sayHello()
+#    print("Hello")
+#f = sayHello
+#f()
 #print("----------------")
 #sayHello()
 
@@ -30,7 +31,7 @@
 #print(p)
 
 #def sayHello(msg, end="!", sep=": "):
-#    print("Message"+sep+msg+end)
+    #print("Message"+sep+msg+end)
     
 #def getSquare(w, h):
 #        return 2*(w+h)
@@ -95,13 +96,13 @@
 #sayHello(123)
 
 # Следующий пример
-#def max2(a, b):
-#   if a>b:
- #       return a
-  # else:
-   #     return b
+def max2(a, b):
+   if a>b:
+        return a
+   else:
+       return b
 
-#print( max2(2, -3) )
+print( max2(2, -3) )
 
 
 
@@ -137,6 +138,16 @@
 
 # или площадь или периметр прямоугольника
 
+#a = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89];
+
+#b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 55, 12, 13]
+
+#result = [El for El in a if El in b]
+#print(result)
+#import operator
+#d = {1: 2, 3: 4, 4: 3, 2: 1, 0: 0}
+#result = dict(sorted(d.items(), key=operator.itemgetter(1)))
+#print(result)
 
 
 
