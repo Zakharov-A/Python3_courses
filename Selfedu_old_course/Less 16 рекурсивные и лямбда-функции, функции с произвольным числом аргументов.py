@@ -35,18 +35,17 @@
 #myFunc(1,2,3, sep="&", arg1=1, arg2=2, arg3=3)
 
 
-def showElements(lst, func):
-    for x in lst:
-        if func(x):
-            print(x)
+#def showElements(lst, func):
+#    for x in lst:
+ #       if func(x):
+ #           print(x)
 
-def __odd(x):
-    return True if x%2 != 0 else False
+#def __odd(x):
+#    return True if x%2 != 0 else False
 
-a = [1,2,3,4,5,6,7]
-showElements(a, lambda x: True if x%2==0 else False)
+#a = [1,2,3,4,5,6,7]
+#showElements(a, lambda x: True if x%2==0 else False)
 
 #showElements(a, __odd)
-
 
 

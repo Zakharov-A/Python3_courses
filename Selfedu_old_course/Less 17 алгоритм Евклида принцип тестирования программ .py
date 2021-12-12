@@ -5,35 +5,21 @@ def getNOD(a, b):
         по алгоритму Евклида.
         Возвращает вычисленный НОД.
     """    
-    #while a != b:
-        #if a>b:
-            #a -= b
-        
-        #else:
-            #b -= a
-
-
     if a<b:
         a,b = b,a
-
     while b>0:
-        #t = b;
-        #b = a%b
-        #a = t
         a,b = b, a%b
         
     return a
 
 print( getNOD(45, 9) )
 
-
-
 def testNOD():
     #--test 1---------
     a=28; b=35
     res = getNOD(a,b)
     if res == 7:
-        print("test1 - ok")
+       print("#test1 - ok")
     else:
         print("#test1 - fail")
         
