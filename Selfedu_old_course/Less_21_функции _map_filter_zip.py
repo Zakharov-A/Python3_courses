@@ -105,3 +105,46 @@
 # print( list(it ) )
 
 # Tasks
+
+# Задача 1
+
+# lst = list('hello world!')
+#
+# voc = dict(h='х', e='е', l='л', o='о', w='в', r='р', d='д')
+#
+#
+#
+# a = map(lambda x: voc.get(x) if voc.get(x) is not None else x, lst)
+#
+# print(''.join(a))
+
+
+# Задача 2
+
+a="""Куда ты скачешь, гордый конь 
+
+И где опустишь ты копыта? 
+
+О мощный властелин судьбы! 
+
+Не так ли ты над самой бездной, 
+
+На высоте, уздой железной 
+
+Россию поднял на дыбы?"""
+
+
+
+a=a.split()
+
+
+
+b=list(a[x] for x in range(len(a)) if  x%2!=0)
+
+print(b)
+
+# Задание 3
+
+n=int(input("Введите целое число: "))
+
+b=[i for i in range(1,n+1) if n%i==0]; print(b)
