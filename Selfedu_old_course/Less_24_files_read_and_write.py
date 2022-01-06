@@ -127,7 +127,7 @@
 # ]
 
 # try:
-#     file = open("out.txt", "rb")
+#     file = open("out.bin", "rb")
 
 #     try:
 #         # pickle.dump(books, file)
@@ -141,25 +141,94 @@
 
 #--------------------------
 
-import pickle
+# import pickle
 
-books = [
-("А сороки-Белобоки"),
-("Поскакали по полям,"),
-("Закричали журавлям:"),
-("«Горе! Горе! Крокодил"),
-("Солнце в небе проглотил!»")
-]
+# books = [
+# ("А сороки-Белобоки"),
+# ("Поскакали по полям,"),
+# ("Закричали журавлям:"),
+# ("«Горе! Горе! Крокодил"),
+# ("Солнце в небе проглотил!»")
+# ]
 
+# try:
+#     file = open("out.bin", "rb")
+
+#     try:
+#         # pickle.dump(books, file)
+#         bs = pickle.load(file)
+#         print( bs )
+#     finally:
+#         file.close()
+
+# except FileNotFoundError:
+#     print("Невозможно открыть файл")
+
+#------------------------------------
+
+# import pickle
+
+# books1 = ["А сороки-Белобоки"]
+# books2 = ["Поскакали по полям,"]
+# books3 =["Закричали журавлям:"]
+# books4 =["«Горе! Горе! Крокодил"]
+
+
+
+# try:
+#     file = open("out.bin", "wb")
+
+#     try:
+#         pickle.dump(books1, file)
+#         pickle.dump(books2, file)
+#         pickle.dump(books3, file)
+#         pickle.dump(books4, file)
+        
+#     finally:
+#         file.close()
+
+# except FileNotFoundError:
+#     print("Невозможно открыть файл")
+
+#-------------------------------
+
+# import pickle
+
+# books1 = ["А сороки-Белобоки"]
+# books2 = ["Поскакали по полям,"]
+# books3 =["Закричали журавлям:"]
+# books4 =["«Горе! Горе! Крокодил"]
+
+
+
+# try:
+#     file = open("out.bin", "rb")
+
+#     try:
+#         b1 = pickle.load(file)
+#         b2 = pickle.load(file)
+#         b3 = pickle.load(file)
+#         b4 = pickle.load(file)
+
+#         print(b1, b2, b3, b4, sep="\n")
+        
+#     finally:
+#         file.close()
+
+# except FileNotFoundError:
+#     print("Невозможно открыть файл")
+
+#--------------------------------
+
+# 1 задача1: Странно не увидел ни у кого использование срезов сразу в файле.. так же проще по моему.
 try:
-    file = open("out.txt", "rb")
-
+    file2 = open('text1.txt', 'r', encoding='utf-8')
+    file3 = open('text2.txt', 'w', encoding='utf-8')
     try:
-        # pickle.dump(books, file)
-        bs = pickle.load(file)
-        print( bs )
+        f2 = file2.read(100)
+        f3 = file3.write(f2[::2])
     finally:
-        file.close()
-
-except FileNotFoundError:
-    print("Невозможно открыть файл")
+        file2.close()
+        file3.close()
+except FileNotFoundError as fnfe:
+    print(fnfe)
