@@ -220,15 +220,71 @@
 
 #--------------------------------
 
-# 1 задача1: Странно не увидел ни у кого использование срезов сразу в файле.. так же проще по моему.
-try:
-    file2 = open('text1.txt', 'r', encoding='utf-8')
-    file3 = open('text2.txt', 'w', encoding='utf-8')
-    try:
-        f2 = file2.read(100)
-        f3 = file3.write(f2[::2])
-    finally:
-        file2.close()
-        file3.close()
-except FileNotFoundError as fnfe:
-    print(fnfe)
+# 1 задача
+
+# k=0
+
+# a=[]
+
+# with open('test.txt', 'r', encoding='utf-8') as f:
+
+# 	for i in f.readlines():
+
+# 		i=i.replace('\n', '')
+
+# 		while (k+len(i))<=100:
+
+# 			a+=i[::2]
+
+# 			k+=len(i)
+
+# 		else:
+
+# 			a+=i[:(100-k):2]
+
+# with open('out.txt', 'w+', encoding='utf-8') as f:
+
+# 	for i in a:
+
+# 		f.write(i)
+	
+
+
+
+
+
+# 2 задача
+
+# try:
+#     with open("user_sentence","w",encoding ="UTF-8") as file:
+#         sentence = input("Write a sentence:").split()
+#         for word in sentence:
+#             file.write(word+'\n')
+# except Exception as e:
+#     print(e)
+
+# 3 задача
+
+# import pickle
+
+# d = {"house": "дом", "car": "машина",
+
+#      "tree": "дерево", "road": "дорога",
+
+#      "river": "река"}
+
+# s=open('w.bin','wb')
+
+# pickle.dump(d,s)
+
+# s.close()
+
+# r=open('w.bin','rb')
+
+# d= pickle.load(r)
+
+# for i in d:
+
+#     print( i,d.get(i))
+
+# r.close()
