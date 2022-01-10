@@ -7,12 +7,12 @@
 
 #--------------------
 
-# import mymath
+# from mymath import *
 #
-# m = mymath.sum(1,2,3)
+# m = sum(1,2,3)
 # print(m)
 #
-# print(mymath.PI)
+# print(PI)
 
 #-------------------
 
@@ -57,11 +57,10 @@
 
 #---------------------
 
-# from mymath import  ar
-# import  mymath
+# from mymath import ar
+# import mymath
 #
 # ar += (10,)
-#
 # print(ar, mymath.ar, sep="\n")
 
 #-----------------------
@@ -90,49 +89,7 @@
 
 #----Task-2---
 
-# from module2 import *
-#
-#
-#
-# while True:
-#
-#     print('************************')
-#
-#     print('* 1: Перевести слово   *')
-#
-#     print('* 2: Добавить слово    *')
-#
-#     print('* 3: Удалить слово     *')
-#
-#     print('* 4: Завершить работу  *')
-#
-#     print('************************')
-#
-#
-#
-#     x = int(input('Выбери пункт меню: '))
-#
-#     if x == 1:
-#
-#         translate_word()
-#
-#     elif x == 2:
-#
-#         add_word()
-#
-#     elif x == 3:
-#
-#         delete_word()
-#
-#     elif x == 4:
-#
-#         print('Конец программы..')
-#
-#         break
-
-#----Task-3---не работает
-
-from module3 import *
+from module2 import *
 
 
 
@@ -149,9 +106,9 @@ while True:
     print('* 4: Завершить работу  *')
 
     print('************************')
-
-
-
+#
+#
+#
     x = int(input('Выбери пункт меню: '))
 
     if x == 1:
@@ -168,8 +125,7 @@ while True:
 
     elif x == 4:
 
-        save_file()
-
         print('Конец программы..')
 
         break
+
