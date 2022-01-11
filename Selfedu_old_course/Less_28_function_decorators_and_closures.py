@@ -40,6 +40,9 @@
 #
 # testTime(getNOD, 100000, 2)
 
+#--------------------
+
+
 # import time
 #
 # def getNOD(a, b):
@@ -91,7 +94,10 @@
 #     if a < b: a,b = b,a
 #     while b: a,b = b, a%b
 #     return a
-#
+
+# getNOD(100000,2)
+# getFastNOD(100000, 2)
+
 # res = getNOD(100000,2)
 # print(res)
 
@@ -153,50 +159,50 @@
 
 #--Task--2--
 
-def cache(fn):
-
-    d = {}
-
-
-
-    def wrapper(k):
-
-        if d.get(k):
-
-            print(f'Есть {d[k]}')
-
-        else:
-
-            d[k] = fn(k)
-
-            print(f'Нет {d[k]}')
-
-        return d
-
-
-
-    return wrapper
-
-
-
-
-
-@cache
-
-def sq(x):
-
-    return x ** .5
-
-
-
-
-
-print('"stop" для выхода')
-
-x = input('Вычислить корень из числа: ')
-
-while x != 'stop':
-
-    sq(int(x))
-
-    x = input()
+# def cache(fn):
+#
+#     d = {}
+#
+#
+#
+#     def wrapper(k):
+#
+#         if d.get(k):
+#
+#             print(f'Есть {d[k]}')
+#
+#         else:
+#
+#             d[k] = fn(k)
+#
+#             print(f'Нет {d[k]}')
+#
+#         return d
+#
+#
+#
+#     return wrapper
+#
+#
+#
+#
+#
+# @cache
+#
+# def sq(x):
+#
+#     return x ** .5
+#
+#
+#
+#
+#
+# print('"stop" для выхода')
+#
+# x = input('Вычислить корень из числа: ')
+#
+# while x != 'stop':
+#
+#     sq(int(x))
+#
+#     x = input()
