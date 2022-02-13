@@ -1,0 +1,6 @@
+# print("Hello my friend! ", 7, 15, ".", sep="|", end="!\n")
+# print("Second \n\"L\ni\nn\ne\"")
+# print("Результат: ", 5 / 3)
+# print("Результат: ", min(1, 2, 3, 6, -9))
+# print("Результат: ", max(1, 2, 3, 6, -9))
+input("Введите данные: ")
