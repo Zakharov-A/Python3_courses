@@ -74,5 +74,5 @@
 
 #----lambda функция----
 func = lambda x, y: x * y
-rere = func(5, 2)
+rere = func(5, 3)
 print(rere)
