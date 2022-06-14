@@ -7,9 +7,9 @@
 
 # ----
 num = int(input())
-param = 'even'
+param = 'odd'
 if num % 2 == 0:
-    param = 'odd'
+    param = 'even'
 
 print(param)
 
