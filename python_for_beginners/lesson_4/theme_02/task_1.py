@@ -8,4 +8,3 @@ elif hour >= 12 and hour <= 13:
 elif hour >= 20 and hour <= 21:
     discount = 0.15
 print(f" your sale {discount}")
-
