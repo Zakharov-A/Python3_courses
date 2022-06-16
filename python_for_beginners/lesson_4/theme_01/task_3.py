@@ -1,5 +1,6 @@
 time_type = input()
 time = int(input())
+
 total_seconds = time
 if time_type == 'mm':
     total_seconds = time * 60
