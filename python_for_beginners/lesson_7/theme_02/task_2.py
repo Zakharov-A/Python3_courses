@@ -6,7 +6,7 @@ hh = total_hours % 24
 total_minutes = total_seconds // 60
 mm = total_minutes % 60
 ss = total_seconds % 60
-time = f'{hh:02d}:{mm:02d}:{ss:02d}.'
+time = f'{hh:02d}:{mm:02d}:{ss:02d}'
 
 index = None
 for i, item in enumerate(times):
